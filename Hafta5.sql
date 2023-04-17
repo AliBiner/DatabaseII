@@ -22,3 +22,18 @@
 --select datename(weekday,GETDATE())  Monday
 
 --select pAd,pSoyad, datediff(year,pDTarihi,getdate()) as Yas, datediff(month,pIsBasTarihi,getdate()) as IsSuresi from personel
+
+
+--Aggreate Function
+
+--select count(pAd) from personel
+--select count(*) from personel
+--select min(pMaas) from personel
+--select max(pDTarihi) from personel
+--select sum(pMaas) from personel
+--select avg(pMaas) from personel
+--select sum(pMaas)/count(pAd) from personel
+--select max(pMaas) - min(pMaas) from personel
+--select datediff(month,min(pIsBasTarihi),max(pIsBasTarihi)) from personel
+--select datediff(year,min(pDTarihi),max(pDTarihi)) from personel
+--select pMaas - (select avg(pMaas) from personel) from personel
